@@ -9,7 +9,6 @@ import android.widget.Button;
 
 import com.example.jose.myaplicacion.registrado.RegistroActivity;
 import com.example.jose.myaplicacion.verPublicidad.PublicidadActivity;
-
 public class MainActivity extends AppCompatActivity {
 
     Button casa, departamento, condominio, publicidad;

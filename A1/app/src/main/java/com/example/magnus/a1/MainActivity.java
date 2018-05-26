@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -25,8 +26,9 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
 
     private ImageView fotocuenta;
     private TextView correocuenta;
-
     private GoogleApiClient googleApiClient;
+    Button siguiente_contraseña ;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +45,15 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
                 .enableAutoManage(this, this)
                 .addApi(Auth.GOOGLE_SIGN_IN_API, gso)
                 .build();
+
+        siguiente_contraseña = (Button) findViewById(R.id.ir_contraseña);
+        siguiente_contraseña.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent ircontra=new Intent(getApplicationContext(), ContrasenaActivity.class);
+                startActivity(ircontra);
+            }
+        });
     }
 
     @Override

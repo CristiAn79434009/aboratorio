@@ -40,13 +40,13 @@
         android:onClick="borrar"
         android:text="BORRAR CUENTA"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/siguiente"
+        app:layout_constraintEnd_toStartOf="@+id/ir_contraseña"
         app:layout_constraintHorizontal_bias="0.259"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/siguiente"
+        android:id="@+id/ir_contraseña"
         android:layout_width="96dp"
         android:layout_height="39dp"
         android:layout_marginBottom="32dp"
